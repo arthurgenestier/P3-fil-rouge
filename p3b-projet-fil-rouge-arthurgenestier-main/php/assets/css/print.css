@@ -1,0 +1,196 @@
+/**
+ * Styles print pour "Voyage… pas loin"
+ */
+
+
+body {
+    /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+    background-color: #ffffff;
+    font-family: Serif;
+    font-size: 12pt;
+    line-height: 1.4;
+}
+
+.skip-link,
+.navigation,
+.link-cta,
+.footer-list,
+.footer-logo,
+.networks-element a img {
+    /* Les éléments qui ne seront pas affichés  */
+    display: none;
+}
+
+.site-header {
+  background-color: #ffffff;
+}
+
+.site-header .max-content,
+.site-header .max-content .header-logo {
+    /* On supprime les marges autour du logo  */
+    padding: 0;
+    margin: 0;
+}
+
+.section-selected-destination,
+.section-statistics,
+.section-today-video,
+.section-locations,
+.section-slogan,
+.column1,
+.column2,
+.stats-element,
+.video-transcription {
+    /* Modifications : suppression de la couleur d'arrière-plan - marges et padding */
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    vertical-align: baseline;
+    min-height: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.5%;
+    text-indent: 0;
+    line-height: 25pt;
+    font-size: 18pt;
+    color: #000000;
+}
+
+h2 {
+    font-size: 16pt;
+    padding: 0;
+
+}
+
+h3 {
+    font-size: 13pt;
+
+}
+
+
+.section h2 {
+    margin: 50px 0 0 0;
+}
+
+.place h3 {
+    margin: 8pt 0 4pt 0;
+    padding: 0;
+}
+
+.max-content {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-selected-destination .column1,
+.section-selected-destination .column2 {
+    display: inline-block;
+}
+
+.section-selected-destination .column1 {
+    width: calc(100% - 340px);
+    margin-right: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.section-selected-destination .column2 {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.stats-list {
+    display: block;
+    list-style-type: disc;
+
+}
+
+.stats-nb {
+    display: inline-block;
+    font-size: 16pt;
+    
+}
+
+.stats-label {
+    display: inline-block;
+}
+
+.section-today-video {
+    margin: 20px 0;
+}
+
+.section-today-video iframe {
+  max-height: 300px;
+}
+
+.video-transcription {
+    margin: 0;
+    text-align: left;
+}
+
+/* On affiche l'URL après le lien de transcription */
+.video-transcription a[href^="./"]:after {
+    content: " (http://www.monsite.fr"attr(href) ") ";
+    font-size: 10pt;
+}
+
+.place {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.place h3 {
+    text-align: left;
+}
+
+.place-img {
+    display: inline-block;
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.place-content {
+    display: inline-block;
+    width: calc(100% - 230px);
+    padding: 0;
+    text-align: left;
+}
+
+.image-background {
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+    background-image: none;
+}
+
+
+.networks-list {
+    display: block;
+    list-style-type: disc;
+}
+
+.networks-element,
+.stats-element {
+    display: block;
+    margin: 0;
+}
+
+.networks-element + .networks-element {
+    margin: 0;
+}
+
+/* On affiche les URL après les liens */
+.networks-list a:link:after,
+.networks-list a:visited:after {
+    content: " ("attr(href) ") ";
+    font-size: 10pt;
+}

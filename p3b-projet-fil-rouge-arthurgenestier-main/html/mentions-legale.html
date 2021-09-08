@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Emmet : meta:vp -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mentions légales - Voyage… pas loin</title>
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body class="site">
+        <!--
+        Emmet: header+main+footer
+        Ces 3 balises sont la base de la structure sémantique de notre page
+        on oublie pas le role "banner" (ARIA) stipulant que c'est l'entête de la page
+        -->
+        <header class="site-header" role="banner">
+            <div class="skip-link">
+                <a href="#main" class="link-arrow">Aller au contenu</a>
+            </div>
+            <div class="max-content">
+                <p class="header-logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-voyage-pas-loin.svg" alt="Voyage… pas loin" width="120" height="40">
+                    </a>
+                </p>
+                <!--
+                Emmet: nav>ul>li*5>a
+                On oubli pas le role "navigation" (ARIA) stipulant que le contenu correspond à la navigation dans le site
+                -->
+                <nav class="navigation" role="navigation">
+                    <!-- Et nos liens doivent être une liste de liens dans la navigation -->
+                    <ul class="navigation-list">
+                        <li class="navigation-element"><a class="navigation-link" href="./index.html" aria-current="page">Accueil</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./ou-voyager-pas-loin.html">Où voyager pas loin ?</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./bien-voyager.html">Bien voyager</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./faq.html">FAQ</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./contact.html">Nous contacter</a></li>
+                    </ul>
+                    <button type="button" class="menu-toggle" aria-controls="menu">
+                        <span class="toggle__button" aria-hidden="true"> <span class="toggle__bar"></span> <span class="toggle__bar toggle__bar__short"></span> <span class="toggle__bar"></span> </span>
+                        <span class="menu-toggle__text">Menu</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- On oubli pas le role "main" (ARIA) stipulant que cette balise contient le contenu principal de la page -->
+        <main role="main" id="main">
+            <div class="max-content">
+                <h1>Mentions légales</h1>
+
+                <section id="edition">
+                    <h2>Édition et hébergement du site web</h2>
+                    <p>
+                        <span class="text-bold">Voyage… pas loin</span>, Société Anonyme<br>
+                        8 rue du Paradis<br>
+                        35000 Rennes
+                    </p>
+                    <p>
+                        500 000 000 R.C.S Paris<br>
+                        Capital social : 320 000 euros
+                    </p>
+                    <p>
+                        Téléphone : +33 (0)2 61 91 68 45
+                    </p>
+                    <p>
+                        Adresse e-mail : bienvenue@voyagepasloin.com
+                    </p>
+                    <p>
+                        Directrice de la publication : Gwenaëlle Chevrier
+                    </p>
+                </section>
+
+                <section id="hosting">
+                    <h2>Hébergement du site web</h2>
+                    <p>
+                        PLANETHOSTER inc.
+                    </p>
+                    <p>
+                        4416 Louis B. Mayer<br>
+                        Laval (Québec) H7P 0G1<br>
+                        Canada
+                    </p>
+                </section>
+
+                <section id="law">
+                    <h2>Droit applicable</h2>
+                    <p>
+                        Les présentes mentions légales sont régies par le droit français. Seuls les tribunaux de Paris seront territorialement compétents pour juger tous litiges relatifs à l’utilisation du présent site internet.
+                    </p>
+                </section>
+
+                <section id="property">
+                    <h2>Droits de propriété intellectuelle</h2>
+                    <p>
+                        L’ensemble des documents, informations, œuvres et éléments intégrés au présent site internet (tels que les logos, textes et slogans, photographies, dessins, images, vidéos, séquences animées sonores ou non) sont de la propriété de <span class="text-bold">Voyage… pas loin</span> ou de tiers ayant autorisés à les utiliser. Toute utilisation, reproduction, représentation ou modification, par quelque procédé que ce soit et sur quelque support que ce soit, de tout ou partie des documents, informations, œuvres et éléments du présent site internet, sans avoir obtenu l’autorisation préalable écrite de <span class="text-bold">Voyage… pas loin</span>, est strictement interdite et constitue un délit de contrefaçon.
+                    </p>
+                    <p>
+                        De la même manière, l’appellation <span class="text-bold">Voyage… pas loin</span> et les logos de <span class="text-bold">Voyage… pas loin</span> sont des marques déposées. Toute utilisation, reproduction, imitation ou apposition de ces marques, sans autorisation préalable écrite de <span class="text-bold">Voyage… pas loin</span>, est strictement interdite et constitue un délit de contrefaçon.
+                    </p>
+                    <p>
+                        Tout utilisateur du présent site internet s’interdit de copier, modifier ou reproduire sous quelque forme que ce soit les documents, informations, œuvres et les éléments intégrés au présent site internet et s’engage à respecter l’ensemble des dispositions applicables en matière de droits de propriété intellectuelle au titre de la loi française.
+                    </p>
+                </section>
+
+                <section id="exlusion">
+                    <h2>Exclusion de garantie et de responsabilité</h2>
+                    <p>
+                        L’ensemble des documents, informations, œuvres et éléments apparaissant sur le présent site internet est transmis à titre indicatif et est dépourvu de toute garantie, quel qu’elle soit. Ainsi <span class="text-bold">Voyage… pas loin</span> ne peut garantir ni l’exactitude ni l’exhaustivité desdits documents, informations, œuvres et éléments apparaissant sur présent site internet, ces derniers pouvant contenir des erreurs et/ou des omissions. de <span class="text-bold">Voyage… pas loin</span> ne peut être tenu responsable d’aucun dommage, direct ou indirect, résultant de l’utilisation faite par un utilisateur de ces documents, informations, œuvres et éléments.
+                    </p>
+                </section>
+
+                <section id="financial">
+                    <h2>Informations financières</h2>
+                    <p>
+                        Le présent site internet est susceptible de contenir des informations financières sous différentes formes, portant par exemple sur les résultats, la stratégie et/ou la situation financière de <span class="text-bold">Voyage… pas loin</span>. Il est précisé que ces informations financières prévisionnelles dépendent de plusieurs facteurs économiques et reposent sur des hypothèses. <span class="text-bold">Voyage… pas loin</span> ne peut être tenu responsable de l’absence de mise à jour de ces informations, compte tenu de l’évolution des facteurs sur la base desquels elles sont basées.
+                    </p>
+                </section>
+
+                <section id="security">
+                    <h2>Sécurité</h2>
+                    <p>
+                        <span class="text-bold">Voyage… pas loin</span> s’engage à mettre en œuvre les moyens nécessaires afin d’assurer la sécurité des documents, informations, œuvres et éléments apparaissant sur le présent site internet. L’utilisateur du présent site internet s’engage néanmoins, à utiliser le site en conformité avec les lois et règlements applicables au jour de l’utilisation dudit site. Il s’engage également à prendre toutes les précautions nécessaires en termes de sécurité afin de se prémunir contre tous virus. <span class="text-bold">Voyage… pas loin</span> ne pourra être tenu responsable en cas de contamination du matériel de l’utilisateur pendant ou suite à la consultation par l’utilisateur, du présent site internet. L’utilisateur déclare consulter le présent site internet en ayant connaissance des risques pouvant survenir et découlant de cette consultation, notamment concernant les risques d’interception et/ou d’altération de données.
+                    </p>
+                </section>
+
+                <section id="update">
+                    <h2>Mise à jour des informations</h2>
+                    <p>
+                        <span class="text-bold">Voyage… pas loin</span> se réserve le droit à tout moment et sans information préalable des utilisateurs du présent site internet, de modifier une partie ou l’ensemble des documents, informations, œuvres et éléments apparaissant sur le présent site internet. Il est possible que le présent site internet soit indisponible le temps d’effectuer cette mise à jour. En tout état de cause, <span class="text-bold">Voyage… pas loin</span> ne pourra être tenu responsable en cas d’indisponibilité du présent site internet pour quelque cause que ce soit.
+                    </p>
+                </section>
+
+                <section id="rgpd">
+                    <h2>Données personnelles et cookies</h2>
+                    <p>
+                        Le site <span class="text-bold">Voyage… pas loin</span> ne contient pas de formulaire et ne recueille aucune donnée statistique quant à l’usage de son site web. Aucun cookie n’est déposé sur le navigateur des utilisateurs et utilisatrices de ce site web.
+                    </p>
+                </section>
+            </div>
+        </main>
+        <!-- On oubli pas le role "contentinfo" (ARIA) stipulant que la balise contient le pied de page -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="max-content">
+                <p class="footer-logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-voyage-pas-loin.svg" alt="Voyage… pas loin" width="188" height="63">
+                    </a>
+                </p><!--
+                --><ul class="footer-list">
+                    <li class="footer-list-element"><a class="footer-list-link" href="./index.html">Accueil</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./ou-voyager-pas-loin.html">Où voyager pas loin ?</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./bien-voyager.html">Bien voyager</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./faq.html">FAQ</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./contact.html">Nous contacter</a></li>
+                </ul><!--
+                --><ul class="footer-list">
+                    <!-- Emmet: ul>li*3>a -->
+                    <li class="footer-list-element"><a class="footer-list-link" href="./plan-site.html">Plan du site</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./accessibilite.html">Accessibilité</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./mentions-legale.html">Mentions légales</a></li>
+                </ul><!--
+                --><div class="footer-networks">
+                    <p class="footer-follow">Suivez nous !</p><!--
+                    --><ul class="networks-list">
+                        <!-- Emmet: li*3>a>img -->
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://www.instagram.com/voyage.pas.loin/" title="instagram Voyage… Pas loin">
+                                <img src="./assets/img/logo-instagram.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://www.facebook.com/voyage.pas.loin/" title="Facebook Voyage… Pas loin">
+                                <img src="./assets/img/logo-facebook.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://twitter.com/voyagepasloin/" title="Twitter Voyage… Pas loin">
+                                <img src="./assets/img/logo-twitter.png" alt="Twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

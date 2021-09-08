@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Plan de site - Voyage… pas loin</title>
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body class="site">
+        <!--
+        Emmet: header+main+footer
+        Ces 3 balises sont la base de la structure sémantique de notre page
+        on oublie pas le role "banner" (ARIA) stipulant que c'est l'entête de la page
+        -->
+        <header class="site-header" role="banner">
+            <div class="skip-link">
+                <a href="#main" class="link-arrow">Aller au contenu</a>
+            </div>
+            <div class="max-content">
+                <p class="header-logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-voyage-pas-loin.svg" alt="Voyage… pas loin" width="120" height="40">
+                    </a>
+                </p>
+                <!--
+                Emmet: nav>ul>li*5>a
+                On oubli pas le role "navigation" (ARIA) stipulant que le contenu correspond à la navigation dans le site
+                -->
+                <nav class="navigation" role="navigation">
+                    <!-- Et nos liens doivent être une liste de liens dans la navigation -->
+                    <ul class="navigation-list">
+                        <li class="navigation-element"><a class="navigation-link" href="./index.html" aria-current="page">Accueil</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./ou-voyager-pas-loin.html">Où voyager pas loin ?</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./bien-voyager.html">Bien voyager</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./faq.html">FAQ</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./contact.html">Nous contacter</a></li>
+                    </ul>
+                    <button type="button" class="menu-toggle" aria-controls="menu">
+                        <span class="toggle__button" aria-hidden="true"> <span class="toggle__bar"></span> <span class="toggle__bar toggle__bar__short"></span> <span class="toggle__bar"></span> </span>
+                        <span class="menu-toggle__text">Menu</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- On oubli pas le role "main" (ARIA) stipulant que cette balise contient le contenu principal de la page -->
+        <main role="main" id="main">
+            <div class="max-content">
+                <ul class="plan-site">
+                    <li class="plan-site-element"><a class="plan-site-link link-arrow" href="./index.html">Accueil</a></li>
+                    <li class="plan-site-element"><a class="plan-site-link link-arrow" href="./ou-voyager-pas-loin.html">Où voyager pas loin ?</a></li>
+                    <li class="plan-site-element"><a class="plan-site-link link-arrow" href="./ou-voyager-pas-loin.html">Bien voyager</a></li>
+                    <li class="plan-site-element"><a class="plan-site-link link-arrow" href="./faq.html">FAQ</a></li>
+                    <li class="plan-site-element"><a class="plan-site-link link-arrow" href="./contact.html">Nous contacter</a></li>
+                    <li class="plan-site-element"><a class="plan-site-link link-arrow" href="./accessibilite.html">Accessibilité</a></li>
+                    <li class="plan-site-element"><a class="plan-site-link link-arrow" href="./mentions-legales.html">Mentions Légales</a></li>
+                </ul>
+            </div>
+        </main>
+        <!-- On oubli pas le role "contentinfo" (ARIA) stipulant que la balise contient le pied de page -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="max-content">
+                <p class="footer-logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-voyage-pas-loin.svg" alt="Voyage… pas loin" width="188" height="63">
+                    </a>
+                </p><!--
+                --><ul class="footer-list">
+                    <li class="footer-list-element"><a class="footer-list-link" href="./index.html">Accueil</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./ou-voyager-pas-loin.html">Où voyager pas loin ?</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./bien-voyager.html">Bien voyager</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./faq.html">FAQ</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./contact.html">Nous contacter</a></li>
+                </ul><!--
+                --><ul class="footer-list">
+                    <!-- Emmet: ul>li*3>a -->
+                    <li class="footer-list-element"><a class="footer-list-link" href="./plan-site.html">Plan du site</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./accessibilite.html">Accessibilité</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./mentions-legales.html">Mentions légales</a></li>
+                </ul><!--
+                --><div class="footer-networks">
+                    <p class="footer-follow">Suivez nous !</p><!--
+                    --><ul class="networks-list">
+                        <!-- Emmet: li*3>a>img -->
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://www.instagram.com/voyage.pas.loin/" title="instagram Voyage… Pas loin">
+                                <img src="./assets/img/logo-instagram.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://www.facebook.com/voyage.pas.loin/" title="Facebook Voyage… Pas loin">
+                                <img src="./assets/img/logo-facebook.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://twitter.com/voyagepasloin/" title="Twitter Voyage… Pas loin">
+                                <img src="./assets/img/logo-twitter.png" alt="Twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

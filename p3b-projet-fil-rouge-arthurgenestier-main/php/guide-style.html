@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guide de style - Voyage… pas loin</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <main role="main">
+        <h1>Guide de style</h1>
+
+        <nav role="navigation">
+            <ul>
+                <li><a href="#couleurs">Couleurs</a></li>
+                <li><a href="#typographie">Typographie</a></li>
+                <li><a href="#liens">Liens</a></li>
+                <li><a href="#images">Images</a></li>
+            </ul>
+        </nav>
+
+        <section id="couleurs">
+            <h2>Couleurs</h2>
+
+            <h3>Palette</h3>
+            <ul class="palette-list">
+                <li class="palette-item">
+                    <div class="palette-colour white"></div>
+
+                    <ul class="palette-colour-info-list">
+                        <li class="palette-colour-info-item" lang="en">White</li>
+                        <li class="palette-colour-info-item">C : 0 / M : 0 / J : 0 / N : 0</li>
+                        <li class="palette-colour-info-item">R : 255 / V : 255 / B : 255</li>
+                        <li class="palette-colour-info-item">#FFFFFF</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour buccaneer"></div>
+
+                    <ul class="palette-colour-info-list">
+                        <li class="palette-colour-info-item" lang="en">Buccaneer</li>
+                        <li class="palette-colour-info-item">C : 0 / M : 55 / J : 50 / N : 55</li>
+                        <li class="palette-colour-info-item">R : 115 / V : 52 / B : 57</li>
+                        <li class="palette-colour-info-item">#733439</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour pacific-blue"></div>
+
+                    <ul class="palette-colour-info-list">
+                        <li class="palette-colour-info-item" lang="en">Pacific Blue</li>
+                        <li class="palette-colour-info-item">C : 98 / M : 18 / J : 0 / N : 25</li>
+                        <li class="palette-colour-info-item">R : 4 / V : 157 / B : 191</li>
+                        <li class="palette-colour-info-item">#049DBF</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour sinbad"></div>
+
+                    <ul class="palette-colour-info-list">
+                        <li class="palette-colour-info-item" lang="en">Sinbad</li>
+                        <li class="palette-colour-info-item">C : 20 / M : 2 / J : 0 / N : 15</li>
+                        <li class="palette-colour-info-item">R : 173 / V : 212 / B : 217</li>
+                        <li class="palette-colour-info-item">#ADD4D9</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour yellow-green"></div>
+
+                    <ul class="palette-colour-info-list">
+                        <li class="palette-colour-info-item" lang="en">Yellow Green</li>
+                        <li class="palette-colour-info-item">C : 10 / M : 0 / J : 47 / N : 15</li>
+                        <li class="palette-colour-info-item">R : 195 / V : 217 / B : 115</li>
+                        <li class="palette-colour-info-item">#C3D973</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour cream-can"></div>
+
+                    <ul class="palette-colour-info-list">
+                        <li class="palette-colour-info-item" lang="en">Cream Can</li>
+                        <li class="palette-colour-info-item">C : 0 / M : 20 / J : 58 / N : 5</li>
+                        <li class="palette-colour-info-item">R : 242 / V : 193 / B : 102</li>
+                        <li class="palette-colour-info-item">#F2C166</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour black"></div>
+
+                    <ul class="palette-colour-info-list">
+                        <li class="palette-colour-info-item" lang="en">Black</li>
+                        <li class="palette-colour-info-item">C : 0 / M : 0 / J : 0 / N : 1</li>
+                        <li class="palette-colour-info-item">R : 0 / V : 0 / B : 0</li>
+                        <li class="palette-colour-info-item">#000000</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour black-haze"></div>
+
+                    <ul class="palette-colour-info-list">
+                        <li class="palette-colour-info-item" lang="en">Black Haze</li>
+                        <li class="palette-colour-info-item">C : 0 / M : 0 / J : 0 / N : 5</li>
+                        <li class="palette-colour-info-item">R : 241 / V : 242 / B : 242</li>
+                        <li class="palette-colour-info-item">#F1F2F2</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Combinaisons</h3>
+            <p>Afin de respecter les règles d’accessibilité sur les contrastes au niveau AA des WCAG, nous nous assurons que les ratio entre la couleur de texte et la couleur de fond soit d’au moins 4,5:1. <a href="https://abc.useallfive.com/?colors[]=733439,049DBF,ADD4D9,C3D973,F2C166,000000,FFFFFF">Cet outil nous a aidé à définir les combinaisons possibles</a>.</p>
+
+            <ul class="palette-list">
+                <li class="palette-item">
+                    <div class="palette-colour white">
+                        <p class="palette-colour-text black">Texte</p>
+                        <p class="palette-colour-text buccaneer">Texte</p>
+                    </div>
+
+                    <p>Couleurs de texte autorisées sur le fond de couleur <span lang="en">White</span> :</p>
+                    <ul>
+                        <li><span lang="en">Black</span> (ratio 21 : 1)</li>
+                        <li><span lang="en">Buccaneer</span> (ratio 9.2 : 1)</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour buccaneer">
+                        <p class="palette-colour-text sinbad">Texte</p>
+                        <p class="palette-colour-text yellow-green">Texte</p>
+                        <p class="palette-colour-text cream-can">Texte</p>
+                        <p class="palette-colour-text white">Texte</p>
+                        <p class="palette-colour-text black-haze">Texte</p>
+                    </div>
+
+                    <p>Couleurs de texte autorisées sur le fond de couleur <span lang="en">Buccaneer</span> :</p>
+                    <ul>
+                        <li>Sinbad (ratio 5.79 : 1)</li>
+                        <li>Yellow Green (ratio 5.92 : 1)</li>
+                        <li>Cream Can (ratio 5.53 : 1)</li>
+                        <li>White (ratio 9.21 : 1)</li>
+                        <li>Black Haze (ratio 8.21 : 1)</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour pacific-blue">
+                        <p class="palette-colour-text black">Texte</p>
+                    </div>
+
+                    <p>Couleurs de texte autorisées sur le fond de couleur <span lang="en">Pacific blue</span> :</p>
+                    <ul>
+                        <li><span lang="en">Black</span> (ratio 21 : 1)</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour sinbad">
+                        <p class="palette-colour-text black">Texte</p>
+                        <p class="palette-colour-text buccaneer">Texte</p>
+                    </div>
+
+                    <p>Couleurs de texte autorisées sur le fond de couleur <span lang="en">Sinbad</span> :</p>
+                    <ul>
+                        <li><span lang="en">Black</span> (ratio 21 : 1)</li>
+                        <li><span lang="en">Buccaneer</span> (ratio 9.2 : 1)</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour yellow-green">
+                        <p class="palette-colour-text black">Texte</p>
+                        <p class="palette-colour-text buccaneer">Texte</p>
+                    </div>
+
+                    <p>Couleurs de texte autorisées sur le fond de couleur <span lang="en">Yellow green</span> :</p>
+                    <ul>
+                        <li><span lang="en">Black</span> (ratio 21 : 1)</li>
+                        <li><span lang="en">Buccaneer</span> (ratio 9.2 : 1)</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour cream-can">
+                        <p class="palette-colour-text black">Texte</p>
+                        <p class="palette-colour-text buccaneer">Texte</p>
+                    </div>
+
+                    <p>Couleurs de texte autorisées sur le fond de couleur <span lang="en">Cream can</span> :</p>
+                    <ul>
+                        <li><span lang="en">Black</span> (ratio 21 : 1)</li>
+                        <li><span lang="en">Buccaneer</span> (ratio 9.2 : 1)</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour black">
+                        <p class="palette-colour-text pacific-blue">Texte</p>
+                        <p class="palette-colour-text sinbad">Texte</p>
+                        <p class="palette-colour-text yellow-green">Texte</p>
+                        <p class="palette-colour-text cream-can">Texte</p>
+                        <p class="palette-colour-text white">Texte</p>
+                        <p class="palette-colour-text black-haze">Texte</p>
+                    </div>
+
+                    <p>Couleurs de texte autorisées sur le fond de couleur <span lang="en">Black</span> :</p>
+                    <ul>
+                        <li>Pacific Blue (ratio 6.58 : 1)</li>
+                        <li>Sinbad (ratio 5.79 : 1)</li>
+                        <li>Yellow Green (ratio 5.92 : 1)</li>
+                        <li>Cream Can (ratio 5.53 : 1)</li>
+                        <li>White (ratio 9.21 : 1)</li>
+                        <li>Black Haze (ratio 8.21 : 1)</li>
+                    </ul>
+                </li>
+                <li class="palette-item">
+                    <div class="palette-colour black-haze">
+                        <p class="palette-colour-text black">Texte</p>
+                        <p class="palette-colour-text buccaneer">Texte</p>
+                    </div>
+
+                    <p>Couleurs de texte autorisées sur le fond de couleur <span lang="en">Black haze</span> :</p>
+                    <ul>
+                        <li><span lang="en">Black</span> (ratio 21 : 1)</li>
+                        <li><span lang="en">Buccaneer</span> (ratio 9.2 : 1)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="typographie">
+            <h2>Typographie</h2>
+
+            <p>Police d’écriture : Montserrat (<a href="https://fonts.google.com/specimen/Montserrat">disponible sur Google
+                    Font</a>)</p>
+            <p>Graisses et styles utilisés : regular, bold, bold italic</p>
+
+            <h3>Niveaux de titres et tailles de police</h3>
+
+            <section class="styleguide-example-section">
+                <h1>Titre de niveau 1 - 35px - Bold</h1>
+                <h2>Titre de niveau 2 - 30px - Bold</h2>
+                <h3>Titre de niveau 3 - 25px - Bold</h3>
+                <h4>Titre de niveau 4 - 22px - Bold</h4>
+                <h5>Titre de niveau 5 - 20px - Bold</h5>
+                <h6>Titre de niveau 6 - 18px - Bold</h6>
+                <p>Corps de texte - 15px - Regular</p>
+            </section>
+
+            <h3>Listes</h3>
+
+            <section class="styleguide-example-section">
+                <ul>
+                    <li>Liste à puces</li>
+                    <li>Liste à puces</li>
+                    <li>Liste à puces</li>
+                </ul>
+
+                <ol>
+                    <li>Liste numérotée</li>
+                    <li>Liste numérotée</li>
+                    <li>Liste numérotée</li>
+                </ol>
+            </section>
+
+            <h3>Exemple</h3>
+
+            <section class="styleguide-example-section">
+                <h1>Mentions légales</h1>
+                <h2>Édition et hébergement du site web</h2>
+                <p>Voyage… pas loin, Société Anonyme</p>
+                <p>8 rue du Paradis<br />
+                    35000 Rennes</p>
+            </section>
+
+        </section>
+
+        <section id="liens">
+            <h2>Liens</h2>
+            <h3>Lien isolé (hors paragraphe)</h3>
+            <p>Lien isolé (hors paragraphe) - Styles par défaut, au survol et au focus :</p>
+            <a href="#" class="link-arrow">Lien texte explicite</a>
+
+            <h3>Lien dans le contenu</h3>
+            <p>Lien dans le contenu - Styles par défaut, au survol et au focus :</p>
+            <p><a href="#" class="link-content">Contactez-nous</a> pour prendre rendez-vous !</p>
+
+            <h3>CTA</h3>
+            <p>CTA - Styles par défaut, au survol et au focus :</p>
+            <a href="#" class="link-cta link-cta-primary">Texte</a>
+            <a href="#" class="link-cta link-cta-secondary">Texte</a>
+        </section>
+
+        <section id="images">
+            <h2>Images</h2>
+
+            <h3>Image principale</h3>
+            <img class="image" src="./assets/img/canal-colmar-610x408.jpg" alt="Le canal de Colmar" width="610" height="408">
+
+            <h3>Image légendée</h3>
+            <figure class="image-legend" role="figure" aria-label="Canal à travers Colmar, crédit photo : no_limit_pictures">
+                <img class="image" src="./assets/img/canal-colmar-610x408.jpg" alt="Le canal de Colmar" width="610" height="408">
+                <figcaption class="image-legend-caption">
+                    Canal à travers Colmar<br>
+                    Crédit photo : no_limit_pictures
+                </figcaption>
+            </figure>
+
+            <h3>Images dans un paragraphe</h3>
+            <div class="text-content">
+                <p>
+                    <img class="image image-left" src="./assets/img/canal-colmar-350-234.jpg" alt="Le canal de Colmar" width="350" height="234">
+                    Lorem ipsum dolor sit amet. Et error minima 33 debitis doloremque aut autem ducimus. Qui beatae enim ea quos quod qui consectetur maxime. Ut enim cumque et reiciendis magni eum tempora nihil sed ipsa molestiae qui accusantium sed quam atque! Eum consequatur voluptatibus ut repellat impedit et adipisci accusantium? Est corrupti dolorum sit quos eveniet non quas provident sed quisquam optio quo voluptatem expedita qui galisum exercitationem eum placeat totam. Qui molestiae maxime et dolores obcaecati qui blanditiis sequi! Qui numquam tempora et dicta dolore ea sapiente voluptas. Et quam maiores 33 sunt rerum est odio quia! Et veritatis quasi id totam dolorum non sint quaerat hic molestiae Quis et temporibus totam ea voluptatem cupiditate. In praesentium placeat ad doloremque quibusdam id enim dignissimos ex voluptatem fugiat vel consequatur dignissimos est voluptate voluptatibus sed alias soluta. Et voluptas internos et eaque tempore et nisi incidunt a expedita perferendis ut dolores quis aut ipsam nobis qui fuga necessitatibus? Qui reiciendis magnam eos assumenda exercitationem cum cumque provident sit mollitia eveniet nam maxime natus quo voluptate sint. Sit voluptatem delectus est maxime dolor et quaerat facilis eos aliquid rerum ad molestiae soluta. Est deleniti asperiores et dolor alias qui nihil ratione non magnam fuga?
+                </p>
+                <p>
+                    <img class="image image-right" src="./assets/img/canal-colmar-350-234.jpg" alt="Le canal de Colmar" width="350" height="234">
+                    Eos ipsam voluptatem ut saepe alias At sunt inventore ut tempora tempore ut dolorem consequatur. Ut sequi deserunt qui culpa ipsum non voluptate eligendi sit nemo officia est dolor temporibus. Cum praesentium nulla in nihil dolor aut placeat ducimus ut quia nisi atque repudiandae quo facere necessitatibus. Et doloribus autem ut nihil voluptatem ut nihil ipsum sed aspernatur dolore ut dolor placeat eos odio autem et ducimus error. Quo labore dolorem et ullam culpa est mollitia similique qui odio officia nam maxime tempora et nulla quas qui libero possimus. Quo omnis incidunt aut blanditiis autem et dolorem modi in eveniet atque sit voluptatum nisi sed labore error? Non voluptatem soluta nam eligendi aliquid in dolore consequatur ut aliquam quos sed nemo impedit. Ut deserunt nihil et dolores omnis rem consequatur tenetur perspiciatis magni qui consectetur nostrum. In quia voluptatibus et molestiae itaque sed sapiente suscipit sit eaque modi eum incidunt recusandae vel autem officia id galisum quaerat. Ut incidunt officiis est inventore optio et atque pariatur non quas eaque id molestias debitis.
+                </p>
+                <p>Lorem ipsum dolor sit amet. Non internos eveniet rem sunt labore ut velit nulla. Aut repellendus saepe ea velit facilis sit odit quas 33 alias dolorem. Est laudantium saepe aut sint sint aut dolor voluptatem quo doloremque quia ab cupiditate numquam aut ullam dolore. Est dolores repellendus sed laudantium laudantium non voluptatem possimus. Ut voluptates placeat aut natus adipisci sed voluptatem dolorum et neque numquam qui quis dolor eum consectetur consequatur est galisum voluptas.</p>
+                <p>Vel ullam assumenda sed beatae inventore sed minus placeat. Sit aliquam neque rem obcaecati omnis et dicta vitae est autem voluptatem quo rerum rerum aut consequuntur autem et perspiciatis odio. Est veniam iusto et obcaecati error et vero dignissimos et eius quia sit omnis ipsa. Qui consequuntur accusamus eos provident adipisci rem assumenda eligendi non laborum temporibus. Ex necessitatibus distinctio qui iusto iste sit ratione consequatur non minus eligendi. Ab tenetur illo qui officiis culpa sed molestiae placeat qui vero praesentium id itaque consequatur. Aut quia dignissimos At dolores mollitia aut aliquam explicabo.</p>
+                <img class="image image-center" src="./assets/img/canal-colmar-610x408.jpg" alt="Le canal de Colmar" width="610" height="408">
+                <p>Vel deleniti nostrum quo repellat inventore sed illum praesentium sed eligendi quia sit ducimus voluptatibus qui rerum quisquam. Aut rerum dignissimos sed dolorem vitae sit nesciunt nulla. Et officia nulla non enim sint et reiciendis delectus aut ullam quam nam obcaecati molestiae vel libero quisquam non officia iusto. Ea illum modi in internos quia ut adipisci quae. In pariatur saepe vel asperiores dolorum ut reprehenderit perspiciatis ut quas similique et dolorum eaque ut facilis officia ipsum laudantium. Ut ipsam sequi nam odit totam At iste obcaecati. Rem voluptatem incidunt qui numquam vitae et doloremque similique est ipsum nobis eos asperiores error.</p>
+            </div>
+
+            <h3>Image avec texte par-dessus</h3>
+            <div class="image-background">
+                <p class="image-background-text">
+                    <span>Avec Voyage… pas loin,</span> <span>voyagez pas loin de chez vous</span> <span>mais l’esprit loin !</span>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

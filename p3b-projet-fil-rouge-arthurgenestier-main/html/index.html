@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Emmet : meta:vp -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil - Voyage… pas loin</title>
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body class="site">
+        <!--
+        Emmet: header+main+footer
+        Ces 3 balises sont la base de la structure sémantique de notre page
+        on oublie pas le role "banner" (ARIA) stipulant que c'est l'entête de la page
+        -->
+        <header class="site-header" role="banner">
+            <div class="skip-link">
+                <a href="#main" class="link-arrow">Aller au contenu</a>
+            </div>
+            <div class="max-content">
+                <p class="header-logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-voyage-pas-loin.svg" alt="Voyage… pas loin" width="120" height="40">
+                    </a>
+                </p>
+                <!--
+                Emmet: nav>ul>li*5>a
+                On oubli pas le role "navigation" (ARIA) stipulant que le contenu correspond à la navigation dans le site
+                -->
+                <nav class="navigation" role="navigation">
+                    <!-- Et nos liens doivent être une liste de liens dans la navigation -->
+                    <ul class="navigation-list">
+                        <li class="navigation-element"><a class="navigation-link" href="./index.html" aria-current="page">Accueil</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./ou-voyager-pas-loin.html">Où voyager pas loin ?</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./bien-voyager.html">Bien voyager</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./faq.html">FAQ</a></li><!--
+                        --><li class="navigation-element"><a class="navigation-link" href="./contact.html">Nous contacter</a></li>
+                    </ul>
+                    <button type="button" class="menu-toggle" aria-controls="menu">
+                        <span class="toggle__button" aria-hidden="true"> <span class="toggle__bar"></span> <span class="toggle__bar toggle__bar__short"></span> <span class="toggle__bar"></span> </span>
+                        <span class="menu-toggle__text">Menu</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- On oubli pas le role "main" (ARIA) stipulant que cette balise contient le contenu principal de la page -->
+        <main role="main" id="main">
+            <!--
+            Emmet: section#selected-destination>h1+p+a+a+img+p
+            On découpe le contenu en plusieurs sections, car chaque section est sur un thème différent
+            -->
+            <section class="section section-selected-destination" id="selected-destination">
+                <div class="max-content">
+                    <div class="column1">
+                        <h1>À la découverte des plus belles destinations près de chez vous</h1>
+                        <p>
+                            Envie de vous évader sans prendre l'avion, ni passer de longues heures dans la voiture ? Pas besoin de
+                            passer la frontière pour découvrir des paysages enchanteurs, des monuments mythiques ou des plages
+                            paradisiaques…
+                        </p>
+                        <a class="link-cta link-cta-primary" href="./contact.html">Contactez-nous</a>
+                        <a class="link-cta link-cta-secondary" href="./faq.html">FAQ</a>
+                    </div><!--
+                    --><div class="column2">
+                        <figure class="image-legend" role="figure" aria-label="Canal à travers Colmar, crédit photo : no_limit_pictures">
+                            <img class="image" src="./assets/img/canal-colmar-610x408.jpg" alt="Le canal de Colmar" width="610" height="408">
+                            <figcaption class="image-legend-caption">
+                                Canal à travers Colmar<br>
+                                Crédit photo : no_limit_pictures
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- Emmet: section#statistics>ul>li*4 -->
+            <section class="section section-statistics" id="statistics">
+                <div class="max-content">
+                    <ul class="stats-list">
+                        <li class="stats-element">
+                            <span class="stats-nb">200</span> <span class="stats-label">villages de charme</span>
+                        </li><!--
+                        --><li class="stats-element">
+                            <span class="stats-nb">50</span> <span class="stats-label">pépites choisies par nos soins</span>
+                        </li><!--
+                        --><li class="stats-element">
+                            <span class="stats-nb">11</span> <span class="stats-label">experts et expertes à votre écoute</span>
+                        </li><!--
+                        --><li class="stats-element">
+                            <span class="stats-nb">130</span> <span class="stats-label">circuits d’exception</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Emmet: section#today-video>h2{En ce moment… découvrez le pays rennais en vidéo}+a{Transcription textuelle de la vidéo} -->
+            <section class="section section-today-video" id="today-video">
+                <div class="max-content">
+                    <h2>En ce moment… découvrez le pays rennais en vidéo</h2>
+                    <p class="video-transcription"><a class="link-arrow" href="./transcription-video.html">Transcription textuelle de la vidéo</a></p>
+                </div>
+            </section>
+            <!-- Emmet: section#locations>h2+article*3>h3+p+a{Découvrir} -->
+            <section class="section section-locations" id="locations">
+                <div class="max-content">
+                    <h2>Lieux à la une</h2>
+                    <!-- Les 3 lieux à la une sont des contenus indépendants => article -->
+                    <article class="place">
+                        <h3 class="place-title">Les Alpes en vue</h3>
+                        <img class="place-img" src="./assets/img/paysage-alpes-403x271.jpg" alt="" width="403">
+                        <div class="place-content">
+                            <p>
+                                Fines lames et vieux couteaux à Saint-Jean-de-Maurienne, les fadas du démon à Bessans, etc.
+                            </p>
+                            <a href="./saint-jean-de-maurienne.html" class="link-cta link-cta-primary">Découvrir</a>
+                        </div>
+                    </article><!--
+                    --><article class="place">
+                        <h3 class="place-title">Cap à l'ouest</h3>
+                        <img class="place-img" src="./assets/img/paysage-bretagne-404x271.jpg" alt="" width="404">
+                        <div class="place-content">
+                            <p>
+                                Des menhirs et un manoir à Camaret-sur-Mer, les maisons fantômes de Guerlédan à Mûr-de-Bretagne, etc.
+                            </p>
+                            <a href="./camaret-sur-mer.html" class="link-cta link-cta-primary">Découvrir</a>
+                        </div>
+                    </article><!--
+                    --><article class="place">
+                        <h3 class="place-title">Autour de Paris</h3>
+                        <img class="place-img" src="./assets/img/paysage-rambouillet-398x271.jpg" alt="" width="398">
+                        <div class="place-content">
+                            <p>
+                                Rodin intime à Meudon, le brame du cerf au fond des bois à Rambouillet, etc.
+                            </p>
+                            <a href="./meudon.html" class="link-cta link-cta-primary">Découvrir</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Emmet: section#slogan>p{Avec Voyage… pas loin, voyagez pas loin de chez vous mais l’esprit loin !} -->
+            <section class="section-slogan" id="slogan">
+                <div class="max-content">
+                    <div class="image-background">
+                        <p class="image-background-text">
+                            <span>Avec Voyage… pas loin,</span> <span>voyagez pas loin de chez vous</span> <span>mais l’esprit loin !</span>
+                        </p>
+                    </div>
+                    <p class="text-after-image">
+                        <span>Avec Voyage… pas loin,</span> <span>voyagez pas loin de chez vous</span> <span>mais l’esprit loin !</span>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <!-- On oubli pas le role "contentinfo" (ARIA) stipulant que la balise contient le pied de page -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="max-content">
+                <p class="footer-logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-voyage-pas-loin.svg" alt="Voyage… pas loin" width="188" height="63">
+                    </a>
+                </p><!--
+                --><ul class="footer-list">
+                    <li class="footer-list-element"><a class="footer-list-link" href="./index.html">Accueil</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./ou-voyager-pas-loin.html">Où voyager pas loin ?</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./bien-voyager.html">Bien voyager</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./faq.html">FAQ</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./contact.html">Nous contacter</a></li>
+                </ul><!--
+                --><ul class="footer-list">
+                    <!-- Emmet: ul>li*3>a -->
+                    <li class="footer-list-element"><a class="footer-list-link" href="./plan-site.html">Plan du site</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./accessibilite.html">Accessibilité</a></li><!--
+                    --><li class="footer-list-element"><a class="footer-list-link" href="./mentions-legale.html">Mentions légales</a></li>
+                </ul><!--
+                --><div class="footer-networks">
+                    <p class="footer-follow">Suivez nous !</p><!--
+                    --><ul class="networks-list">
+                        <!-- Emmet: li*3>a>img -->
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://www.instagram.com/voyage.pas.loin/" title="instagram Voyage… Pas loin">
+                                <img src="./assets/img/logo-instagram.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://www.facebook.com/voyage.pas.loin/" title="Facebook Voyage… Pas loin">
+                                <img src="./assets/img/logo-facebook.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li class="networks-element">
+                            <a class="networks-link" href="https://twitter.com/voyagepasloin/" title="Twitter Voyage… Pas loin">
+                                <img src="./assets/img/logo-twitter.png" alt="Twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
